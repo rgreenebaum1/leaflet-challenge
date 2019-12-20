@@ -103,7 +103,7 @@ function createMap(earthquakes) {
     }).addTo(myMap);
 
     //created a copy of the initial "getColor"
-    function getColor(d) {
+    function getcolor(d) {
         return d > //1000 ? '#08589e' :
             //d > 500 ? '#2b8cbe' :
             d > 5 ? '#7a0177' :
@@ -112,7 +112,10 @@ function createMap(earthquakes) {
                     d > 2 ? '#fa9fb5' :
                         d > 1 ? '#fcc5c0' :
                             '#feebe2'
+
+
     }
+
     var legend = L.control({ position: 'bottomright' });
 
     legend.onAdd = function (myMap) {
